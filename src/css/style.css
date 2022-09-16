@@ -1,0 +1,62 @@
+html{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+}
+main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+.container{
+    margin-top: 100px;
+    max-width: 900px;
+    height: 415px;
+    background-color: #f7f7f7;
+    display: grid;
+    grid: 
+    "destaque propaganda" 56px
+    "destaque sugeridos" 1fr / 1fr 270px;
+    padding: 35px;
+    grid-gap: 15px
+}
+.container .video-destaque{
+    grid-area: destaque;
+}
+/* .container .video-destaque img{
+    width: 100%;
+} */
+.container .video-destaque h1{
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+.container .video-destaque h3{
+    font-size: 14px;
+    padding-bottom: 5px;
+    font-weight: 300;
+}
+.container .video-destaque p{
+    font-size: 16px;
+}   
+.container .propaganda{
+    grid-area: propaganda;
+}
+.container .propaganda img{
+    width: 100%;
+}
+.container .sugeridos{
+    grid-area: sugeridos;
+}
+.container .sugeridos .video{
+    display: flex;
+    padding-bottom: 15px;
+    gap: 5px;
+}
+.container .sugeridos .video .informacoes h2{
+    font-size: 14px;
+    font-weight: 700;
+}
+.container .sugeridos .video .informacoes p{
+    font-size: 11px;
+    
+}
